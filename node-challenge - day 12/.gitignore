@@ -1,0 +1,21 @@
+# Dependências de Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Arquivos de build
+/dist
+/build
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Dependências do Python
+__pycache__/
+*.pyc
+
+# Outros arquivos temporários
+.DS_Store
+Thumbs.db
