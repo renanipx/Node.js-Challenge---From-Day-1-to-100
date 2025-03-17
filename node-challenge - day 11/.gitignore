@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDE/editor config files (e.g., VSCode, Sublime, etc.)
+.vscode/
+.idea/
+
+# System-specific files
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# Build or distribution folders
+dist/
+build/
