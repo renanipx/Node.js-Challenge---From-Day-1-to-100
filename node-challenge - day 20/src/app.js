@@ -1,7 +1,9 @@
-require('dotenv').config();
+const express = require('express');
+const userRoutes = require('./routes/userRoutes');
 
-module.exports = {
-  port: process.env.PORT || 3000,
-  dbUrl: process.env.DB_URL,
-  jwtSecret: process.env.JWT_SECRET,
-};
+const app = express();
+
+app.use(express.json()); 
+app.use('/api/users', userRoutes); 
+
+module.exports = app;
