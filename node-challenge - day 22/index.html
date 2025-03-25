@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat WebSocket</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #messages { width: 300px; height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin: auto; }
+        input { width: 250px; padding: 5px; }
+        button { padding: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Chat WebSocket</h2>
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Digite uma mensagem...">
+    <button onclick="sendMessage()">Enviar</button>
+
+    <script>
+        const ws = new WebSocket('ws://localhost:8080'); 
+        const messagesDiv = document.getElementById('messages');
+
+        ws.onmessage = (event) => {
+            const messageElement = document.createElement('p');
+
+            if (event.data instanceof Blob) {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    messageElement.textContent = reader.result; 
+                    messagesDiv.appendChild(messageElement);
+                    messagesDiv.scrollTop = messagesDiv.scrollHeight; 
+                };
+                reader.readAsText(event.data); 
+            } else {
+                messageElement.textContent = event.data;
+                messagesDiv.appendChild(messageElement);
+                messagesDiv.scrollTop = messagesDiv.scrollHeight; 
+            }
+        };
+
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            if (input.value.trim() !== '') {
+                ws.send(input.value); 
+                input.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
