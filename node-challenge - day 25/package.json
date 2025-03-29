@@ -1,0 +1,23 @@
+{
+  "name": "challenge---day-25",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "chai-http": "^4.4.0",
+    "mocha": "^11.1.0"
+  },
+  "dependencies": {
+    "challenge---day-25": "file:",
+    "express": "^4.21.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
+}
