@@ -1,3 +1,4 @@
 # NODE DEPENDENCIES
 /node_modules
 .env
+/logs
