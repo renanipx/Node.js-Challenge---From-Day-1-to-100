@@ -1,2 +1,2 @@
 // Example test using Jest or just placeholder
-console.log('Running basic test');
+console.log('Running basic test ');
