@@ -1,0 +1,19 @@
+{
+  "name": "challenge---day-54",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Running tests...\" && exit 0",
+    "build": "echo \"Build step...\"",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "challenge---day-54": "file:",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}
