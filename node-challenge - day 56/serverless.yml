@@ -1,0 +1,19 @@
+service: projeto-lambda
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: sa-east-1
+
+functions:
+  ola:
+    handler: handler.ola
+    events:
+      - http:
+          path: /
+          method: get
+
+plugins:
+  - serverless-offline
