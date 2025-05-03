@@ -1,0 +1,18 @@
+config:
+  target: "ws://localhost:3000"  
+  phases:
+    - duration: 60
+      arrivalRate: 10   
+      name: "Ramp up"
+
+scenarios:
+  - engine: "ws"
+    flow:
+      - send: 
+          text: "Hello Server"
+      - think: 1
+      - send:
+          text: "Ping"
+      - think: 1
+      - send:
+          text: "Bye"
