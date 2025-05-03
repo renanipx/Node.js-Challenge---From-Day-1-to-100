@@ -1,0 +1,19 @@
+{
+  "name": "challenge---day-55",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "apollo-server": "^3.13.0",
+    "challenge---day-55": "file:",
+    "graphql": "^16.11.0",
+    "prisma": "^6.7.0"
+  }
+}
