@@ -1,0 +1,15 @@
+{
+  "name": "challenge---day-71",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/greet.js",
+  "bin": {
+    "greet": "./bin/greet.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "challenge---day-71": "file:"
+  }
+}
