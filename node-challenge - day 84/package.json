@@ -1,0 +1,19 @@
+{
+  "name": "challenge---day-84",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",  
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "dataloader": "^2.2.3",
+    "express": "^5.1.0",
+    "graphql": "^16.11.0"
+  }
+}
