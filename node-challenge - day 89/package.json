@@ -1,0 +1,25 @@
+{
+  "name": "challenge---day-89",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/schema": "^10.0.23",
+    "apollo-server": "^3.13.0",
+    "challenge---day-89": "file:",
+    "dotenv": "^16.5.0",
+    "graphql": "^16.11.0",
+    "graphql-redis-subscriptions": "^2.7.0",
+    "graphql-subscriptions": "^3.0.0",
+    "graphql-ws": "^6.0.5",
+    "ioredis": "^5.6.1",
+    "subscriptions-transport-ws": "^0.11.0",
+    "ws": "^8.18.2"
+  },
+  "description": ""
+}
