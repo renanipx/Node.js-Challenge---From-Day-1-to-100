@@ -1,0 +1,19 @@
+<h1>Admin Dashboard</h1>
+
+<form method="POST" action="/admin/new">
+  <input type="text" name="title" placeholder="Title" required>
+  <textarea name="body" placeholder="Content" required></textarea>
+  <button type="submit">Add Post</button>
+</form>
+
+<ul>
+  <% posts.forEach(post => { %>
+    <li>
+      <strong><%= post.title %></strong>
+      <a href="/admin/edit/<%= post._id %>">Edit</a>
+      <form method="POST" action="/admin/<%= post._id %>?_method=DELETE" style="display:inline;">
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
