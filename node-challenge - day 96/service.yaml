@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: challenge-day-96
+spec:
+  selector:
+    app: challenge-day-96
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
+  type: LoadBalancer
